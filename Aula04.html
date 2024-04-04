@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whack-a-Mole Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .hole {
+        width: 100px;
+        height: 100px;
+        background: url('https://emojicdn.elk.sh/🕳️') center/contain no-repeat;
+        position: relative;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .mole {
+        width: 80px;
+        height: 80px;
+        background: url('https://emojicdn.elk.sh/🦔') center/contain no-repeat;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: none;
+    }
+    #score {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>Whack-a-Mole Game</h1>
+<div class="container" id="container"></div>
+<div id="score">Score: 0</div>
+
+<script>
+    const container = document.getElementById('container');
+    const scoreDisplay = document.getElementById('score');
+    let score = 0;
+    let moleTimeout;
+
+    function randomTime(min, max) {
+        return Math.round(Math.random() * (max - min) + min);
+    }
+
+    function randomHole() {
+        const holes = document.querySelectorAll('.hole');
+        const randomIndex = Math.floor(Math.random() * holes.length);
+        const hole = holes[randomIndex];
+        return hole;
+    }
+
+    function peep() {
+        const time = randomTime(500, 1000);
+        const hole = randomHole();
+        hole.classList.add('up');
+        const mole = hole.querySelector('.mole');
+        mole.style.display = 'block';
+        moleTimeout = setTimeout(() => {
+            hole.classList.remove('up');
+            mole.style.display = 'none';
+            if (!mole.classList.contains('whacked')) {
+                score--;
+                scoreDisplay.textContent = `Score: ${score}`;
+            }
+            peep();
+        }, time);
+    }
+
+    function bonk(e) {
+        if (!e.isTrusted) return; // Prevent cheating
+        score++;
+        this.parentNode.classList.remove('up');
+        this.style.display = 'none';
+        this.classList.add('whacked');
+        scoreDisplay.textContent = `Score: ${score}`;
+    }
+
+    const holes = document.querySelectorAll('.hole');
+    holes.forEach(hole => hole.addEventListener('click', bonk));
+
+    peep(); // Start the game
+</script>
+</body>
+</html>
