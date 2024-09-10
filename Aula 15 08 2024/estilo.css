@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;   
+}
+#pr {
+    box-sizing: border-box;
+    border: 6px solid black;
+    border-radius: 0.25vw;
+    font-size: 5vw;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding-bottom: 200px;
+}
+a:hover {
+    position: inherit;
+}
+#sg {
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-size: 40%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#img {
+    position: absolute;
+    width: 65px;
+    left: 16px;
+}

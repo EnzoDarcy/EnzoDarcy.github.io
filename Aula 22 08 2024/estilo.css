@@ -1,0 +1,16 @@
+#img {
+    border: 5px solid black;
+    border-radius: 500px;
+    margin-left: 295px;
+    margin-right: 295px;
+}
+#nome {
+    text-align: center;
+}
+#desc {
+    text-align: center;
+}
+#stat {
+    position: relative;
+    left: 360px;
+}
