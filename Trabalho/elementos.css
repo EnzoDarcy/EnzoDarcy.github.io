@@ -1,7 +1,28 @@
+@font-face {
+    font-family: Optima;
+    src: url(Fontes/Optima.TTF);
+}
+
 body{
     background-image: url(Imagens/hubBackground.jpg);
-    background-position: center;
+    background-position: center 30%;
     background-size: 1200px;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin: 10% auto 5% auto;
+    color: bisque;
+    font-size: 45px;
+    font-family: Optima;
+}
+
+.nav-elementos{
+    height: 25%;
+    position: fixed;
 }
 
 .elementos__icone {
@@ -22,7 +43,7 @@ body{
     border-radius: 30px;
     /* padding: 600px;
     margin: -465px; */
-    padding: 35px;
+    padding: 15px;
     z-index: 1;
 }
 
