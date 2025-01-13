@@ -8,9 +8,26 @@
     src: url(../../Fontes/Recorte.ttf);
 }
 
-*{
+@font-face {
+    font-family: "Morte";
+    src: url(../../Fontes/Reappeat.ttf);
+}
+
+@font-face {
+    font-family: "Sangue";
+    src: url(../../Fontes/F-STEIN_.TTF);
+}
+
+@font-face {
+    font-family: "Conhecimento";
+    src: url(../../Fontes/Optima.TTF);
+}
+
+body{
     background-image: url(../../Imagens);
     font-family: "Gabriele";
+    color: rgb(137, 206, 252);
+    margin: 0px;
 }
 
 header{
@@ -22,20 +39,28 @@ header{
     width: 100%;
     font-family: "Recortes";
 }
+
+main{
+    background-image: url(../../Imagens/Background_Energia.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
 h1{
     margin: auto;
     text-align: center;
     font-size: 70px;
-    color: bisque;
-}
-
-main{
-    width: 100%;
+    letter-spacing: 10px;
+    color: rgb(255, 0, 221);
+    text-shadow: purple 0px 0px 100px, violet 0px 0px 150px;
 }
 
 h2{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
 }
 
@@ -70,4 +95,31 @@ h2{
 #euzinhaaa{
     margin-left: 50%;
     text-align: center;
+}
+
+#morte strong{
+    font-family: "Morte";
+    color: rgb(37, 37, 37);
+    text-shadow: gray 0px 0px 5px, black 0px 0px 15px;
+    font-size: large;
+}
+
+#sangue strong{
+    font-family: "Sangue";
+    color: rgb(161, 0, 0);
+    text-shadow: rgb(197, 3, 3) 0px 0px 5px, rgb(148, 0, 0) 0px 0px 15px;
+    font-size: large;
+}
+
+#conhecimento strong{
+    font-family: "Conhecimento";
+    color: rgb(255, 238, 0);
+    text-shadow: rgb(255, 208, 0) 0px 0px 5px, rgb(194, 158, 0) 0px 0px 15px;
+    font-size: large;
+}
+
+#euzinhaaa strong{
+    color: rgb(255, 0, 221);
+    text-shadow: rgb(89, 0, 255) 0px 0px 5px, rgb(0, 153, 255) 0px 0px 15px;
+    font-size: large;
 }
