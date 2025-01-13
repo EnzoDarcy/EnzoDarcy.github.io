@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Gabriele";
+    src: url(../../Fontes/gabriele-bad.ttf);
+}
+
+@font-face {
+    font-family: "Recortes";
+    src: url(../../Fontes/Recorte.ttf);
+}
+
+*{
+    background-image: url(../../Imagens);
+    font-family: "Gabriele";
+}
+
+header{
+    display: flex;
+    background-image: url(../../Imagens/EnergiaHeader.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+    width: 100%;
+    font-family: "Recortes";
+}
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 70px;
+    color: bisque;
+}
+
+main{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comentario1, .comentario2{
+    width: 25%;
+}
+
+.comentario1{
+    transform: rotate(-1deg);
+}
+
+.comentario2{
+    transform: rotate(1deg);
+}
+
+#morte{
+    margin-left: 15%;
+    text-align: center;
+}
+
+#sangue{
+    margin-left: 65%;
+    margin-top: -5%;
+    text-align: center;
+}
+
+#conhecimento{
+    margin-left: 20%;
+    text-align: center;
+}
+
+#euzinhaaa{
+    margin-left: 50%;
+    text-align: center;
+}
