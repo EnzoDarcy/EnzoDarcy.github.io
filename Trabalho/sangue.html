@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangue</title>
+    <link rel="stylesheet" href="blocos.css">
+    <link rel="stylesheet" href="sangue.css">
+</head>
+<body>
+    <img src="Imagens/Background Sangue.png" class="background">
+    <div class="texto1">
+        <h1>Como eu <span>AMO</span> escrever isso</h1> 
+        <p>externalizar meus sensações é TÃO bom, eu me sinto completamente realizado</p>
+    </div>
+    <div class="texto2">
+        <h1>E aqueles de <span id="energia">ENERGIA</span>?</h1> 
+        <p>eu não consigo parar de olhar aquelas cores brilhantes, seus barulhos me ATIÇAM</p>
+    </div>
+</body>
+<script>
+    // Target the span element
+const textElement = document.getElementById("energia");
+const text = textElement.textContent;
+
+// Clear the original text content
+textElement.textContent = "";
+
+// Wrap each character in a span
+text.split("").forEach(char => {
+    const span = document.createElement("span");
+    span.textContent = char;
+    textElement.appendChild(span);
+});
+</script>
+</html>

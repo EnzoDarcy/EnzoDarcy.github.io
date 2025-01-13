@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Reappeat";
+    src: url(Fontes/Reappeat.ttf);
+}
+
+@font-face {
+    font-family: "Gabriele";
+    src: url(Fontes/gabriele-bad.ttf);
+}
+
+@font-face {
+    font-family: "Stein";
+    src: url(Fontes/F-STEIN_.TTF);
+}
+
+.background {
+    width: 100%;
+    height: 200%;
+    margin: 0;
+}
+
+.texto1 {
+    background-color: rgba(255, 255, 255, 0%);
+    width: 27%;
+    left: 6%;
+    position: absolute;
+    top: 19%;
+    font-family: "Stein";
+    text-align: center;
+    color: white;
+    text-shadow: black 0 0 15px;
+}
+
+.texto1 h1 {
+    font-size: 200%;
+}
+
+.texto1 h1 span {
+    color: red;
+    text-shadow: black 0px 0px 5px, black 0px 0px 5px;
+}
+
+.texto1 p {
+    font-family: "Gabriele";
+    padding-left: 12.5%;
+    font-size: 200%;
+    width: 75%;
+}
+
+#energia {
+    font-family: "Stein";
+}
+
+#energia span:nth-child(3n+1) {
+    color: rgb(92, 142, 248);
+    text-shadow: rgb(42, 141, 255) 0 0 5px, rgb(60, 189, 236) 0 0 15px;
+}
+#energia span:nth-child(3n+2) {
+    color: rgb(135, 26, 168);
+    text-shadow: rgb(60, 189, 236) 0 0 5px, rgb(60, 189, 236) 0 0 15px;
+}
+#energia span:nth-child(3n+3) {
+    color: rgb(55, 222, 255);
+    text-shadow: rgb(87, 21, 163) 0 0 5px, rgb(60, 189, 236) 0 0 15px;
+}
