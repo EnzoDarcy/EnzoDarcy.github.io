@@ -1,21 +1,25 @@
 @font-face {
     font-family: "Reappeat";
-    src: url(Fontes/Reappeat.ttf);
+    src: url(../../Fontes/Reappeat.ttf);
 }
 
 @font-face {
     font-family: "Gabriele";
-    src: url(Fontes/gabriele-bad.ttf);
+    src: url(../../Fontes/gabriele-bad.ttf);
 }
 
 @font-face {
     font-family: "Stein";
-    src: url(Fontes/F-STEIN_.TTF);
+    src: url(../../Fontes/F-STEIN_.TTF);
 }
 
 @font-face {
     font-family: "Optima";
-    src: url(Fontes/Optima.TTF);
+    src: url(../../Fontes/Optima.TTF);
+}
+
+html {
+    background-color: rgb(113, 0, 0);
 }
 
 .background {
@@ -24,7 +28,7 @@
     margin: 0;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2, .texto3, .texto4 {
     background-color: rgba(255, 255, 255, 0%);
     width: 27%;
     left: 6%;
@@ -84,14 +88,17 @@ h1 span {
 }
 
 .texto4 {
-    left: 6%;
-    top: 160%;
-    width: 400px;
+    text-align: right;
+    left: 77%;
+    top: 183%;
+    width: 320px;
+    text-align:end;
 }
 
 .texto4 h1 {
     font-family: "Stein";
     font-size: 225%;
+    text-align: center;
 }
 
 
